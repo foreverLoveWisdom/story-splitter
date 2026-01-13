@@ -14,7 +14,7 @@ Avoid these common Product Owner mistakes that create **unmaintainable stories**
 ✅ **Good**: Break into 10 stories of 3-8 points each
 - See [story-breakdown-example.md](../examples/story-breakdown-example.md)
 
-**Fix**: Use Prompt 1 (Break Down Large Story)
+**Fix**: Use Break Down Large Story prompt
 
 ## 2. Too Many Acceptance Criteria
 
@@ -59,7 +59,7 @@ Avoid these common Product Owner mistakes that create **unmaintainable stories**
 ## AI Collaboration Context
 
 Story-splitter prompts help avoid these anti-patterns:
-- Prompt 1 breaks down bundled features
+- Story breakdown prompt splits bundled features
 - Prompts generate 3-5 ACs automatically
 - Given-When-Then format keeps user perspective
 - No time mappings in prompt outputs
