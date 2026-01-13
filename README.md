@@ -12,6 +12,19 @@ It bundles 5+ features into 1 story.
 
 Copy-paste prompts for AI-assisted story breakdown.
 
+## Who This Is For
+
+**Primary audience**: Product Owners without technical background
+
+These prompts translate technical complexity into simple terms so you can create realistic stories without needing to understand code.
+
+**Can also be used by**:
+- Software Engineers (breaking down their own work)
+- QA Engineers (understanding test scope)
+- Technical Product Owners (with codebase knowledge)
+
+But the focus is on **non-technical Product Owners** who need to plan technical features accurately.
+
 ## Two Workflows
 
 ### Basic Flow (No Codebase Access)
