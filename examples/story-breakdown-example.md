@@ -161,24 +161,23 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 
 ### Sprint 3: Error Handling Polish (8 points)
 
-#### Story 3.1: Retry-Eligible Errors (5 pts)
-**User Story**: As a user, I want the system to retry sending emails when temporary errors occur, So that I don't miss important notifications
+#### Story 3.1: Reliable Email Delivery (5 pts)
+**User Story**: As a user, I want to receive notifications even when services are temporarily down, So that I don't miss important updates
 
 **ACs**:
-1. Given server error (500) or timeout occurs, When email fails, Then system retries automatically
-2. Given retrying, When 5 minutes pass, Then retry stops
-3. Given email is retrying, When I perform actions, Then actions aren't blocked
-4. Given retry fails permanently, When giving up, Then I don't see error message
+1. Given I enabled notifications, When temporary error occurs, Then I still receive the notification eventually
+2. Given email is sending, When I use the app, Then my actions work normally without delays
+3. Given temporary error happens, When I use the app, Then I don't see any error messages
 
 ---
 
-#### Story 3.2: Non-Retry-Eligible Errors (3 pts)
-**User Story**: As a user with an invalid email address, I want to see a clear error message, So that I can fix my email
+#### Story 3.2: Invalid Email Address Warning (3 pts)
+**User Story**: As a user with an invalid email address, I want to see a clear warning, So that I can fix my email and receive notifications
 
 **ACs**:
-1. Given invalid email error occurs, When email fails, Then system doesn't retry
-2. Given error occurred, When I view notifications, Then message shows: "Cannot send notifications - please update your email address"
-3. Given error message displays, When I click link, Then profile page opens where I can fix email
+1. Given my email is invalid, When I check notification settings, Then I see message: "Cannot send notifications - please update your email address"
+2. Given I see the warning, When I click "Update Email", Then profile page opens
+3. Given I fix my email, When I save, Then warning disappears
 
 ---
 
