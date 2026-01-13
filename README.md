@@ -12,11 +12,47 @@ It bundles 5+ features into 1 story.
 
 2 copy-paste prompts for ChatGPT/Claude.
 
-## How to Use (3 Steps)
+## Two Workflows
+
+### Basic Flow (No Codebase Access)
+
+Quick breakdown without technical context:
 
 1. Open [Prompt 1](prompts/1-break-down-large-story.md)
-2. Copy → Paste into ChatGPT with your story
-3. Done. You have 3-8 point stories with 3-5 acceptance criteria
+2. Copy → Paste into ChatGPT/Claude with your story
+3. Done. You have 3-8 point stories with acceptance criteria
+
+**Use when**: Business-only features, UI changes, or no codebase access.
+
+### Ideal Flow (With Codebase Scanning)
+
+**For Product Owners with codebase access:**
+
+Collaborate with [Claude Code](https://claude.ai/code) in terminal to scan your codebase first:
+
+1. **Open terminal in your codebase** with Claude Code
+2. **Let AI scan for relevant technical details**:
+   - "Scan the codebase - how does file upload currently work?"
+   - "Find all database tables related to authentication"
+   - "Show me which services handle document processing"
+3. **AI reads actual code** and explains architecture
+4. **Copy technical context + business requirements**
+5. **Use Prompt 1** with complete picture
+6. **Get realistic breakdown** based on real architecture
+
+**Why codebase scanning matters:**
+- ✅ Discovers hidden dependencies (3rd party APIs, shared services)
+- ✅ Accurate complexity from actual code, not assumptions
+- ✅ Engineers trust estimates (based on code they wrote)
+- ✅ Fewer "we didn't know it touches X" surprises mid-sprint
+
+**Example:**
+
+*Without scanning*: "Add PDF export" → 8 points (guess)
+
+*With scanning*: Claude reveals it needs Indica service + S3 + background jobs → Break down into 4 stories (14 points realistic)
+
+**Use when**: Technical features, service integrations, database changes.
 
 ## Real Example
 
