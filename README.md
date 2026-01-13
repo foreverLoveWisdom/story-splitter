@@ -94,6 +94,22 @@ Redirect to /files/index page
 
 Why bad: Shows HOW (code), not WHAT (user action)
 
+## Contributing
+
+Have a recurring problem that needs a prompt solution? We want to hear about it!
+
+**Suggest a new prompt**:
+1. [File an issue](../../issues/new/choose) using the "Prompt Idea" template
+2. Describe your problem (not the solution)
+3. Community validates demand
+4. Maintainers create prompt if validated
+
+**Improve existing prompts**: Submit a Pull Request with before/after examples
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
+
+**Why issue first?** We only add prompts with clear signal of real demand, not theoretical problems.
+
 ## License
 
 [MIT](LICENSE)
