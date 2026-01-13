@@ -76,24 +76,6 @@ Collaborate with [Claude Code](https://claude.ai/code) in terminal to scan your 
 - **[Rewrite Correct Format](prompts/2-rewrite-correct-format.md)** → Story is unclear
 - **[Scan Codebase for Context](prompts/3-scan-codebase-for-context.md)** → Understand existing implementation (use with Claude Code)
 
-## Good vs Bad Acceptance Criteria
-
-**Good**:
-```
-Given I upload a file
-When I click "Delete"
-Then the file disappears
-```
-
-**Bad**:
-```
-Call FileService.delete(uuid) method
-Update database table files
-Redirect to /files/index page
-```
-
-Why bad: Shows HOW (code), not WHAT (user action)
-
 ## Contributing
 
 Have a recurring problem that needs a prompt solution? We want to hear about it!

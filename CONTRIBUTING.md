@@ -64,6 +64,7 @@ Small fixes welcome via Pull Request directly. No issue needed.
 - ❌ Prompts for non-Product Owner audiences
 - ❌ Time-to-points mappings (story points ≠ hours)
 - ❌ Tool-specific instructions (keep it generic)
+- ❌ Agile theory debates (link to official sources instead)
 
 ## Code of Conduct
 
