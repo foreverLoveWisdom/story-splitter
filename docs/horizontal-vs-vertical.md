@@ -61,5 +61,5 @@ Prompt 1 asks your preference - answer honestly based on current team constraint
 
 ## Learn More
 
-**[Vertical Slicing (Gojko Adzic) →](https://gojko.net/2012/01/23/splitting-user-stories-the-hamburger-method/)**
-**[Story Splitting (Mike Cohn) →](https://www.mountaingoatsoftware.com/blog/the-hamburger-method-of-splitting-user-stories)**
+**[Vertical Slices (Richard Lawrence) →](https://agileforall.com/vertical-slices-and-scale/)**
+**[Story Splitting Patterns (Agile Alliance) →](https://www.agilealliance.org/glossary/three-cs/)**
