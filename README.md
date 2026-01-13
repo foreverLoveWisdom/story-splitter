@@ -10,7 +10,7 @@ It bundles 5+ features into 1 story.
 
 ## The Solution
 
-2 copy-paste prompts for ChatGPT/Claude.
+Copy-paste prompts for AI-assisted story breakdown.
 
 ## Two Workflows
 
@@ -31,26 +31,21 @@ Quick breakdown without technical context:
 Collaborate with [Claude Code](https://claude.ai/code) in terminal to scan your codebase first:
 
 1. **Open terminal in your codebase** with Claude Code
-2. **Let AI scan for relevant technical details**:
-   - "Scan the codebase - how does file upload currently work?"
-   - "Find all database tables related to authentication"
-   - "Show me which services handle document processing"
-3. **AI reads actual code** and explains architecture
-4. **Copy technical context + business requirements**
-5. **Use Prompt 1** with complete picture
-6. **Get realistic breakdown** based on real architecture
+2. **Use [Prompt 3: Scan Codebase](prompts/3-scan-codebase-for-context.md)** to get non-technical overview
+   - AI scans actual code files (no guessing!)
+   - Extracts key components, services, dependencies
+   - Translates technical details into simple terms
+   - Outputs actionable breakdown points
+3. **Copy context from AI's findings**
+4. **Use [Prompt 1: Break Down](prompts/1-break-down-large-story.md)** with technical context
+5. **Get realistic breakdown** based on real architecture
 
 **Why codebase scanning matters:**
+- ✅ **Eliminates AI hallucination** - AI reads actual code, doesn't guess
 - ✅ Discovers hidden dependencies (3rd party APIs, shared services)
 - ✅ Accurate complexity from actual code, not assumptions
 - ✅ Engineers trust estimates (based on code they wrote)
 - ✅ Fewer "we didn't know it touches X" surprises mid-sprint
-
-**Example:**
-
-*Without scanning*: "Add PDF export" → 8 points (guess)
-
-*With scanning*: Claude reveals it needs Indica service + S3 + background jobs → Break down into 4 stories (14 points realistic)
 
 **Use when**: Technical features, service integrations, database changes.
 
@@ -62,10 +57,11 @@ Collaborate with [Claude Code](https://claude.ai/code) in terminal to scan your 
 
 [See the breakdown →](examples/after-good-stories.md)
 
-## 2 Prompts
+## Available Prompts
 
-1. **[Break Down Large Story](prompts/1-break-down-large-story.md)** → Story takes > 1 week
-2. **[Rewrite Correct Format](prompts/2-rewrite-correct-format.md)** → Story is unclear
+- **[Break Down Large Story](prompts/1-break-down-large-story.md)** → Story takes > 1 week
+- **[Rewrite Correct Format](prompts/2-rewrite-correct-format.md)** → Story is unclear
+- **[Scan Codebase for Context](prompts/3-scan-codebase-for-context.md)** → Understand existing implementation (use with Claude Code)
 
 ## Story Size Guide
 
