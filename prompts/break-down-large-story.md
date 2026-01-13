@@ -1,4 +1,4 @@
-# Prompt 1: Break Down Large Story
+# Break Down Large Story
 
 **When to use**: Story is too large or bundles multiple features
 

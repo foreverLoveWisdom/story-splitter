@@ -1,4 +1,4 @@
-# Prompt 3: Scan Codebase for Story Context
+# Scan Codebase for Story Context
 
 **Purpose**: Get non-technical overview of how a feature currently works by having AI scan actual code.
 
@@ -149,4 +149,4 @@ When a user performs an action, the system sends an instant email notification. 
 
 - ❌ **Brand new features** - No existing code to scan
 - ❌ **Pure UI changes** - No backend complexity
-- ❌ **No codebase access** - Use Prompt 1 instead
+- ❌ **No codebase access** - Use Break Down Large Story prompt instead

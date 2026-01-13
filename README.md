@@ -41,7 +41,7 @@ These prompts translate technical complexity into simple terms so you can create
 
 Quick breakdown without technical context:
 
-1. Open the [Break Down Large Story](prompts/1-break-down-large-story.md) prompt
+1. Open the [Break Down Large Story](prompts/break-down-large-story.md) prompt
 2. Copy → Paste into ChatGPT/Claude with your story
 3. Done. You have 3-8 point stories with acceptance criteria
 
@@ -54,13 +54,13 @@ Quick breakdown without technical context:
 Collaborate with [Claude Code](https://claude.ai/code) in terminal to scan your codebase first:
 
 1. **Open terminal in your codebase** with Claude Code
-2. **Use [Scan Codebase for Context](prompts/3-scan-codebase-for-context.md)** to get non-technical overview
+2. **Use [Scan Codebase for Context](prompts/scan-codebase-for-context.md)** to get non-technical overview
    - AI scans actual code files (no guessing!)
    - Extracts key components, services, dependencies
    - Translates technical details into simple terms
    - Outputs actionable breakdown points
 3. **Copy context from AI's findings**
-4. **Use [Break Down Large Story](prompts/1-break-down-large-story.md)** with technical context
+4. **Use [Break Down Large Story](prompts/break-down-large-story.md)** with technical context
 5. **Get realistic breakdown** based on real architecture
 
 **Why codebase scanning matters:**
@@ -82,9 +82,9 @@ Collaborate with [Claude Code](https://claude.ai/code) in terminal to scan your 
 
 ## Available Prompts
 
-- **[Break Down Large Story](prompts/1-break-down-large-story.md)** → Story is too large or bundles multiple features
-- **[Rewrite Correct Format](prompts/2-rewrite-correct-format.md)** → Story is unclear
-- **[Scan Codebase for Context](prompts/3-scan-codebase-for-context.md)** → Understand existing implementation (use with Claude Code)
+- **[Break Down Large Story](prompts/break-down-large-story.md)** → Story is too large or bundles multiple features
+- **[Rewrite Correct Format](prompts/rewrite-correct-format.md)** → Story is unclear
+- **[Scan Codebase for Context](prompts/scan-codebase-for-context.md)** → Understand existing implementation (use with Claude Code)
 
 ## Contributing
 

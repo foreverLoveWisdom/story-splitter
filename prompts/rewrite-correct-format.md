@@ -1,4 +1,4 @@
-# Prompt 2: Rewrite Story in Correct Format
+# Rewrite Story in Correct Format
 
 **When to use**: Story is unclear or missing acceptance criteria
 

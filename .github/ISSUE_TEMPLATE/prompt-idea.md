@@ -27,7 +27,7 @@ assignees: ''
 
 **What have you already tried to solve this?**
 
-(Example: "I asked my tech lead for help, but they don't have time. I tried using Prompt 1 but it doesn't address priority ordering.")
+(Example: "I asked my tech lead for help, but they don't have time. I tried using the story breakdown prompt but it doesn't address priority ordering.")
 
 ## What Would Help
 
