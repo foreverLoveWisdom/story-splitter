@@ -11,19 +11,18 @@ Thanks for your interest in improving story breakdown for Product Owners!
 **Process**:
 1. Go to [Issues](../../issues/new/choose)
 2. Select "Prompt Idea" template
-3. Describe your problem (not the solution)
-4. We'll discuss if it needs a new prompt
+3. Describe your problem and how often you face it
+4. If it's recurring, we'll create a prompt
 
 **Why issue first?**
-- ✅ Validates real demand (not theoretical problems)
+- ✅ Focus on recurring problems (not one-time issues)
 - ✅ Avoids duplicate prompts
-- ✅ Community can suggest existing solutions
-- ✅ Maintainers decide if it fits project scope
+- ✅ Others can suggest existing solutions
 
 **What happens after**:
-- If validated → Someone creates the prompt
-- If duplicate → We point you to existing prompt
-- If out of scope → We explain why
+- Recurring problem → We create the prompt
+- One-time issue → We explain why no prompt needed
+- Duplicate → We point you to existing prompt
 
 ### 2. Improve Existing Prompts
 
@@ -60,7 +59,7 @@ Small fixes welcome via Pull Request directly. No issue needed.
 
 ## What We DON'T Accept
 
-- ❌ Prompts without validated demand (file issue first)
+- ❌ Prompts for one-time problems (file issue first to discuss frequency)
 - ❌ Overly complex prompts (> 500 words)
 - ❌ Prompts for non-Product Owner audiences
 - ❌ Time-to-points mappings (story points ≠ hours)

@@ -100,15 +100,14 @@ Have a recurring problem that needs a prompt solution? We want to hear about it!
 
 **Suggest a new prompt**:
 1. [File an issue](../../issues/new/choose) using the "Prompt Idea" template
-2. Describe your problem (not the solution)
-3. Community validates demand
-4. Maintainers create prompt if validated
+2. Describe your problem and how often you face it
+3. If it's recurring (not a one-time issue), we'll create a prompt
 
 **Improve existing prompts**: Submit a Pull Request with before/after examples
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
-**Why issue first?** We only add prompts with clear signal of real demand, not theoretical problems.
+**Why frequency matters?** One-time problems don't need prompts. We focus on recurring pain points.
 
 ## License
 
