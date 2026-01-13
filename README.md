@@ -10,7 +10,7 @@ It bundles 5+ features into 1 story.
 
 ## The Solution
 
-Copy-paste prompts for AI-assisted story breakdown.
+Copy-paste prompts for AI-assisted story breakdown. See [docs/](docs/) for Agile fundamentals to use with AI.
 
 ## Who This Is For
 
