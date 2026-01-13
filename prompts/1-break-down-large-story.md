@@ -1,6 +1,6 @@
 # Prompt 1: Break Down Large Story
 
-**When to use**: Story takes more than 1 week to complete
+**When to use**: Story is too large or bundles multiple features
 
 ---
 
@@ -17,7 +17,7 @@ Note:
 - VERTICALLY = Full feature (backend + frontend + integration) in each story (harder for teams, but users see value faster)
 
 Rules for breakdown:
-- Max 8 points per story (1 week = 8 points)
+- Max 8 points per story (team decides what 8 points means)
 - 3-5 acceptance criteria per story (not more)
 - Each acceptance criteria must follow this format:
   Given [situation]

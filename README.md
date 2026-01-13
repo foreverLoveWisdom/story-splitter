@@ -59,7 +59,7 @@ Collaborate with [Claude Code](https://claude.ai/code) in terminal to scan your 
 
 ## Available Prompts
 
-- **[Break Down Large Story](prompts/1-break-down-large-story.md)** → Story takes > 1 week
+- **[Break Down Large Story](prompts/1-break-down-large-story.md)** → Story is too large or bundles multiple features
 - **[Rewrite Correct Format](prompts/2-rewrite-correct-format.md)** → Story is unclear
 - **[Scan Codebase for Context](prompts/3-scan-codebase-for-context.md)** → Understand existing implementation (use with Claude Code)
 
