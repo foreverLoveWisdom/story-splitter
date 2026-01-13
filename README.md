@@ -68,7 +68,7 @@ Collaborate with [Claude Code](https://claude.ai/code) in terminal to scan your 
 
 **After**: 10 stories, 48 points total, delivered in 6 weeks (on time)
 
-[See the breakdown →](examples/after-good-stories.md)
+[See the complete breakdown →](examples/story-breakdown-example.md)
 
 ## Available Prompts
 
