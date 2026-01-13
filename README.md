@@ -94,6 +94,6 @@ Redirect to /files/index page
 
 Why bad: Shows HOW (code), not WHAT (user action)
 
----
+## License
 
-**License**: MIT
+[MIT](LICENSE)
