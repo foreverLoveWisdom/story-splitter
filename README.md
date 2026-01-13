@@ -63,14 +63,6 @@ Collaborate with [Claude Code](https://claude.ai/code) in terminal to scan your 
 - **[Rewrite Correct Format](prompts/2-rewrite-correct-format.md)** → Story is unclear
 - **[Scan Codebase for Context](prompts/3-scan-codebase-for-context.md)** → Understand existing implementation (use with Claude Code)
 
-## Story Size Guide
-
-- **3 points** = 2 days
-- **5 points** = 3 days
-- **8 points** = 5 days (MAX)
-
-If > 8 points → Use Prompt 1
-
 ## Good vs Bad Acceptance Criteria
 
 **Good**:
