@@ -191,5 +191,5 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 - ✅ Each story is independently testable
 - ✅ QA engineer can test 3-5 ACs per story (manageable)
 - ✅ Product owner can track progress story-by-story
-- ✅ Team can parallelize work (APIs in Sprint 1, UI in Sprint 2)
+- ✅ Team can parallelize work (backend and frontend engineers work simultaneously)
 - ✅ No "stuck at in progress for weeks" - clear incremental progress
