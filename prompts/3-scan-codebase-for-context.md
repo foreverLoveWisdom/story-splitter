@@ -65,21 +65,21 @@ Please:
 
 ## Example Usage
 
-**Context**: You're planning to add "PDF export with digital signature" feature
+**Context**: You're planning to add "daily digest email" feature
 
 **What you paste into Claude Code**:
 
 ```
-I'm a Product Owner planning a new feature related to PDF generation.
+I'm a Product Owner planning a new feature related to email notifications.
 
-I need to understand how PDF generation currently works in this codebase, but WITHOUT technical jargon.
+I need to understand how email notifications currently work in this codebase, but WITHOUT technical jargon.
 
 [... rest of prompt ...]
 ```
 
 **What Claude Code does**:
 1. Scans codebase with `grep`, reads actual files
-2. Finds: `app/services/pdf_generator.rb`, `lib/indica/client.rb`, `app/jobs/pdf_processing_job.rb`
+2. Finds: `app/services/email_sender.rb`, `app/models/notification.rb`, `app/jobs/send_email_job.rb`
 3. Reads the code
 4. Explains in simple terms
 
@@ -88,31 +88,32 @@ I need to understand how PDF generation currently works in this codebase, but WI
 ```
 ## Current Implementation (Simple Terms)
 
-When a user uploads a document, the system converts it to PDF using an external service called "Indica". The PDF is stored in S3 cloud storage and a background job processes it asynchronously.
+When a user performs an action, the system sends an instant email notification. Emails are sent using an external email service API. A background job handles the actual sending so the user doesn't wait.
 
 ## Key Components
 
-- **Indica Service**: External API that converts files to PDF format
-- **coffret_files table**: Stores file metadata (name, size, upload date)
-- **S3 Storage**: Where actual PDF files are stored
-- **PdfProcessingJob**: Runs in background after upload completes
+- **Email Service API**: External service that sends emails
+- **notifications table**: Stores user notification preferences
+- **users table**: Stores user email addresses
+- **SendEmailJob**: Background job that sends emails asynchronously
 
 ## Dependencies
 
-- Cloud Expense product uploads 47% of all files
-- Invoice product also uses this for receipt processing
+- User profile feature (requires valid email address)
+- Activity tracking feature (triggers notifications)
 
-## To Add "PDF Digital Signature", You Need:
+## To Add "Daily Digest Email", You Need:
 
-- [ ] Story 1: Integrate with signature service API
-- [ ] Story 2: Add signature verification button to UI
-- [ ] Story 3: Store signature metadata in database
-- [ ] Story 4: Update PdfProcessingJob to handle signatures
+- [ ] Story 1: Add frequency selector to preferences UI
+- [ ] Story 2: Create daily digest aggregation job
+- [ ] Story 3: Store pending notifications in queue table
+- [ ] Story 4: Update email template for digest format
 
 ## Technical Risks
 
-- Indica service doesn't support signatures yet (need to check with team)
-- Existing PDFs won't have signatures (need migration plan)
+- Need new database table for queuing notifications (schema change)
+- Daily job must run at consistent time across timezones
+- Existing instant notifications will coexist (need both flows)
 ```
 
 ---
