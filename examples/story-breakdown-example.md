@@ -76,9 +76,9 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As an engineer, I want to call the email service API, So that the system can send emails
 
 **ACs**:
-1. API call sends email with recipient, subject, and body
-2. Authentication works with API key
-3. Tests pass for successful email sending
+1. Given I have email data, When I call the API, Then it sends the email with recipient, subject, and body
+2. Given I have an API key, When I authenticate, Then the service accepts my request
+3. Given the API call succeeds, When I run tests, Then all tests pass
 
 ---
 
@@ -86,9 +86,9 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As an engineer, I want the email API client to handle errors, So that server errors retry and client errors don't
 
 **ACs**:
-1. Server errors (500) retry automatically
-2. Client errors (invalid email) don't retry
-3. Timeouts retry automatically
+1. Given server error (500) occurs, When API call fails, Then system retries automatically
+2. Given client error (invalid email) occurs, When API call fails, Then system doesn't retry
+3. Given timeout occurs, When API call fails, Then system retries automatically
 
 ---
 
@@ -96,9 +96,9 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As an engineer, I want to call the template service, So that emails have consistent formatting
 
 **ACs**:
-1. API call formats email with template name and data
-2. Returns formatted HTML email
-3. Tests pass for all template types
+1. Given template name and data, When I call the API, Then it formats the email
+2. Given API call succeeds, When I receive response, Then it returns formatted HTML email
+3. Given all template types, When I run tests, Then all tests pass
 
 ---
 
@@ -106,9 +106,9 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As an engineer, I want the template API client to handle errors, So that the system handles failures gracefully
 
 **ACs**:
-1. Server errors (500) retry automatically
-2. Client errors (invalid template) don't retry
-3. Timeouts retry automatically
+1. Given server error (500) occurs, When API call fails, Then system retries automatically
+2. Given client error (invalid template) occurs, When API call fails, Then system doesn't retry
+3. Given timeout occurs, When API call fails, Then system retries automatically
 
 ---
 
@@ -118,11 +118,11 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As a user, I want to set my notification preferences, So that I control what emails I receive
 
 **ACs**:
-1. Preferences page shows toggle switches for each notification type
-2. User can enable/disable notifications
-3. Changes save immediately
-4. Current settings display correctly on page load
-5. Success message shows after saving
+1. Given I open preferences page, When page loads, Then I see toggle switches for each notification type
+2. Given I toggle a switch, When I change setting, Then notification enables/disables
+3. Given I change settings, When I toggle, Then changes save immediately
+4. Given I have saved settings, When page loads, Then current settings display correctly
+5. Given I save changes, When save completes, Then success message shows
 
 ---
 
@@ -130,11 +130,11 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As a user, I want to choose how often I receive notifications, So that I'm not overwhelmed with emails
 
 **ACs**:
-1. Dropdown shows three options: Instant, Daily Digest, Weekly Summary
-2. Selection applies to all enabled notification types
-3. Default is "Instant" for new users
-4. Changes save immediately
-5. Current frequency displays correctly on page load
+1. Given I open frequency selector, When dropdown opens, Then I see three options: Instant, Daily Digest, Weekly Summary
+2. Given I select frequency, When I choose option, Then selection applies to all enabled notification types
+3. Given I'm a new user, When I first open page, Then default is "Instant"
+4. Given I change frequency, When I select option, Then changes save immediately
+5. Given I have saved frequency, When page loads, Then current frequency displays correctly
 
 ---
 
@@ -142,10 +142,10 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As a user, I want emails sent in the background, So that my actions in the app aren't delayed
 
 **ACs**:
-1. Emails queue immediately when actions occur
-2. App doesn't wait for email to send
-3. Failed emails retry automatically
-4. Users don't see errors if email fails
+1. Given I perform an action, When action completes, Then email queues immediately
+2. Given email is queuing, When I perform action, Then app doesn't wait for email to send
+3. Given email fails to send, When error occurs, Then system retries automatically
+4. Given email fails permanently, When retry stops, Then I don't see error message
 
 ---
 
@@ -153,9 +153,9 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As a user, I want easy access to notification settings, So that I can change preferences quickly
 
 **ACs**:
-1. "Notification Preferences" link appears in Settings menu
-2. Link opens preferences page
-3. Visual design matches other menu items
+1. Given I open Settings menu, When menu displays, Then "Notification Preferences" link appears
+2. Given I click the link, When I click, Then preferences page opens
+3. Given I view the menu item, When I see it, Then visual design matches other menu items
 
 ---
 
@@ -165,10 +165,10 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As a user, I want the system to retry sending emails when temporary errors occur, So that I don't miss important notifications
 
 **ACs**:
-1. System retries automatically on server errors (500) and timeouts
-2. Retry stops after 5 minutes total duration
-3. User actions aren't blocked during retry
-4. If retry fails, user doesn't see error (silent failure)
+1. Given server error (500) or timeout occurs, When email fails, Then system retries automatically
+2. Given retrying, When 5 minutes pass, Then retry stops
+3. Given email is retrying, When I perform actions, Then actions aren't blocked
+4. Given retry fails permanently, When giving up, Then I don't see error message
 
 ---
 
@@ -176,9 +176,9 @@ ACs mention "exponential backoff", "max 5 minutes", "invalid email errors" - the
 **User Story**: As a user with an invalid email address, I want to see a clear error message, So that I can fix my email
 
 **ACs**:
-1. Client errors (invalid email) don't retry
-2. Error message shows: "Cannot send notifications - please update your email address"
-3. Link to profile page where user can fix email
+1. Given invalid email error occurs, When email fails, Then system doesn't retry
+2. Given error occurred, When I view notifications, Then message shows: "Cannot send notifications - please update your email address"
+3. Given error message displays, When I click link, Then profile page opens where I can fix email
 
 ---
 
