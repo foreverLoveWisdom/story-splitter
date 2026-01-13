@@ -64,7 +64,7 @@ Sometimes horizontal is necessary due to:
 
 ## AI Collaboration Context
 
-Prompt 1 asks your preference - answer honestly based on current team constraints, not ideal state. AI will generate appropriate breakdown.
+Story breakdown prompt asks your preference - answer honestly based on current team constraints, not ideal state. AI will generate appropriate breakdown.
 
 ## Learn More
 

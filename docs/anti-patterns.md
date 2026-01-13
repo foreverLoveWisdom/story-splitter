@@ -64,6 +64,3 @@ Story-splitter prompts help avoid these anti-patterns:
 - Given-When-Then format keeps user perspective
 - No time mappings in prompt outputs
 
-## Learn More
-
-**[Common Agile Anti-Patterns →](https://www.mountaingoatsoftware.com/blog)**

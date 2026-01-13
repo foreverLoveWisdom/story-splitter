@@ -51,7 +51,7 @@ Use after breaking down stories:
 
 After using story-splitter prompts, run this checklist:
 - Stories violating INVEST = need further breakdown
-- Use Prompt 1 again if stories too large (not Small)
+- Use story breakdown prompt again if stories too large (not Small)
 - Add ACs if not Testable
 
 ## Learn More
