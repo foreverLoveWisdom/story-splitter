@@ -23,7 +23,17 @@ These prompts translate technical complexity into simple terms so you can create
 - QA Engineers (understanding test scope)
 - Technical Product Owners (with codebase knowledge)
 
-But the focus is on **non-technical Product Owners** who need to plan technical features accurately.
+**Why use AI for story breakdown?**
+
+**Team benefits**:
+- **Save time**: Break down stories in 60 seconds instead of hours
+- **Reduce effort**: AI scans code and extracts context automatically
+- **Improve collaboration**: Clear stories = engineers know what to build, QA knows what to test, PO tracks progress
+
+**End user benefits**:
+- **Faster delivery**: Small stories ship in days, not weeks
+- **Better quality**: Each story is independently testable
+- **More predictable**: Teams deliver on time with realistic estimates
 
 ## Two Workflows
 
