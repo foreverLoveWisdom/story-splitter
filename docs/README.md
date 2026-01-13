@@ -9,6 +9,7 @@ Quick reference for Agile/Scrum concepts. Use these as fundamental truth when co
 - **[INVEST Criteria](invest-criteria.md)** - Story quality checklist
 - **[Acceptance Criteria](acceptance-criteria.md)** - 3-5 ACs, Given-When-Then format
 - **[Story Points](story-points.md)** - Why points ≠ hours
+- **[Horizontal vs Vertical](horizontal-vs-vertical.md)** - Breakdown strategies and trade-offs
 - **[Anti-Patterns](anti-patterns.md)** - Common mistakes to avoid
 
 ## Official Sources
